@@ -4,9 +4,9 @@ import './Header.css';
 function Header() {
     return (
         <header>
-            <img src="/assets/Logo.svg"/>
+            <img src="/assets/Logo.svg" alt='logo'/>
             <Nav/>
-            <img src='/assets/icon_hamburgermenu_.svg' class='burger'/>
+            <img src='/assets/icon_hamburgermenu_.svg' class='burger' alt=''/>
         </header>
     );
 }

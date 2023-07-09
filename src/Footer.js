@@ -1,29 +1,30 @@
 import './Footer.css';
+import { Link } from 'react-router-dom';
 
 function Footer() {
     return (
         <footer>
-            <img src="/assets/restauranfood.jpg"/>
+            <img src="/assets/restauranfood.jpg" alt='restaurant'/>
             <div>
                 <h5>Doormat Navigation</h5>
                 <ul>
                     <li>
-                        <a href="">Home</a>
+                        <Link to="/">Home</Link>
                     </li>
                     <li>
-                        <a href="">About</a>
+                        <Link to="/about">About</Link>
                     </li>
                     <li>
-                        <a href="">Menu</a>
+                        <Link to="/menu">Menu</Link>
                     </li>
                     <li>
-                        <a href="">Reservations</a>
+                        <Link to="/booking">Reservations</Link>
                     </li>
                     <li>
-                        <a href="">Order Online</a>
+                        <Link to="/online">Order Online</Link>
                     </li>
                     <li>
-                        <a href="">Login</a>
+                        <Link to="/login">Login</Link>
                     </li>
                 </ul>
             </div>
@@ -41,13 +42,13 @@ function Footer() {
                 <h5>Social Media Links</h5>
                 <ul>
                     <li>
-                        <a href="">Facebook</a>
+                        <a href="https://stackoverflow.com/questions/53914013/failed-to-compile-module-not-found-cant-resolve-react-router-dom">Facebook</a>
                     </li>
                     <li>
-                        <a href="">Twitter</a>
+                        <a href="https://stackoverflow.com/questions/53914013/failed-to-compile-module-not-found-cant-resolve-react-router-dom">Twitter</a>
                     </li>
                     <li>
-                        <a href="">Instagram</a>
+                        <a href="https://stackoverflow.com/questions/53914013/failed-to-compile-module-not-found-cant-resolve-react-router-dom">Instagram</a>
                     </li>
                 </ul>
             </div>
