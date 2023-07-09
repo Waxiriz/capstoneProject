@@ -1,0 +1,21 @@
+.hero-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 5vh;
+    background-color: #415e57;
+    padding: 2vh 20%;
+    color: aliceblue;
+}
+
+.hero-section h1 {
+    margin-bottom: 0;
+}
+
+.hero-section h3 {
+    margin-top: 0;
+}
+
+.hero-section img {
+    width: 600px;
+}

@@ -1,3 +1,5 @@
+import './SpecialsSection.css'
+
 function SpecialsSection() {
     return (
         <article className="specials">

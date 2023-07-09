@@ -1,0 +1,25 @@
+.chicago {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 10vh;
+    padding: 2vh 20%;
+}
+
+.chicago h1 {
+    margin-bottom: 0;
+}
+
+.chicago h3 {
+    margin-top: 0;
+}
+
+.chicago img {
+    width: 400px;
+}
+
+.first-pic {
+    position: relative;
+    top: 20%;
+    right: -20%;
+}

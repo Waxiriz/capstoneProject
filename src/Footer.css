@@ -3,24 +3,22 @@ footer {
     grid-template-columns: 1fr 1fr 1fr 1fr;
     justify-content: center;
     align-items: start;
-    justify-items: center;
+    justify-items: flex-start;
+    background-color: #415e57;
+    color: aliceblue;
+    padding: 1rem 20%;
 }
 
-img {
+footer img {
     max-width: 200px;
 }
 
 footer ul {
-    display: flex;
     flex-direction: column;
 }
 
 footer a {
     font-size: 1em;
-}
-
-h5 {
-    font-size: 1.2em
 }
 
 @media screen and (max-width: 600px) {

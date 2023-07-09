@@ -1,3 +1,5 @@
+import './CustomersSaySection.css';
+
 function CustomersSaySection() {
     return (
         <article className="customers-say">
