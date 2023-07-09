@@ -23,3 +23,20 @@
     border: 1px solid black;
     border-radius: 1rem;
 }
+
+@media screen and (max-width:600px) {
+    .specials {
+        padding: 2vh 5%;
+    }
+
+    .specials .second-row {
+        flex-direction: column;
+        gap: 2vh;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .specials .card {
+        width: 90%;
+    }
+}

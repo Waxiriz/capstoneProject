@@ -23,3 +23,25 @@
     top: 20%;
     right: -20%;
 }
+
+.chicago .right-column {
+    display: flex;
+    flex-direction: row;
+}
+
+@media screen and (max-width:600px) {
+    .chicago {
+        padding: 2vh 5%;
+        flex-direction: column-reverse;
+    }
+
+    .first-pic {
+        top: 0;
+        right: 0;
+        margin: 0;
+    }
+
+    .sec-pic {
+        display: none;
+    }
+}

@@ -19,3 +19,19 @@
     border: 1px solid black;
     border-radius: 1rem;
 }
+
+@media screen and (max-width:600px) {
+    .customers-say {
+        padding: 2vh 5%;
+    }
+
+    .customers-say .second-row {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2vh;
+    }
+
+    .customers-say .card {
+        width: 100%;
+    }
+}

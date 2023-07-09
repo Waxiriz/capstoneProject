@@ -19,3 +19,17 @@
 .hero-section img {
     width: 600px;
 }
+
+@media screen and (max-width:600px) {
+    .hero-section {
+        flex-direction: column;
+        gap: 2vh;
+        padding: 2vh 5%;
+        margin-top: 0;
+    }
+
+    .hero-section img {
+        margin: 0;
+        width: 100%;
+    }
+}

@@ -6,7 +6,7 @@ footer {
     justify-items: flex-start;
     background-color: #415e57;
     color: aliceblue;
-    padding: 1rem 20%;
+    padding: 2vh 20%;
 }
 
 footer img {
@@ -23,7 +23,12 @@ footer a {
 
 @media screen and (max-width: 600px) {
     footer {
+        padding: 1vh 1%;
         grid-template-columns: 200px;
+    }
+
+    footer img {
+        margin: 0;
     }
 
     div {

@@ -36,3 +36,7 @@ button {
   background-color: #F4CE14;
   cursor: pointer;
 }
+
+img {
+  max-width: 90vw;
+}
