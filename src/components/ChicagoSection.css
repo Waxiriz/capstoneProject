@@ -15,7 +15,8 @@
 }
 
 .chicago img {
-    width: 400px;
+    width: min(600px, 50%);
+    object-fit: contain;
 }
 
 .first-pic {

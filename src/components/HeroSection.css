@@ -8,6 +8,10 @@
     color: aliceblue;
 }
 
+.hero-section a {
+    font-size: 1.2rem;
+}
+
 .hero-section h1 {
     margin-bottom: 0;
 }
