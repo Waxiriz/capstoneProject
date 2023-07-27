@@ -1,16 +1,23 @@
 import { useState } from "react";
 
-function BookingForm() {
+function BookingForm(props) {
     const [datePick, setDatePick] = useState("");
-    const [timePick, setTimePick] = useState("");
     const [guests, setGuests] = useState(1);
     const [occasion, setOccasion] = useState("No occasion");
 
-    const availableTimes = ["17:00", "18:00", "19:00", "20:00", "21:00", "22:00"]
+    const [actualTime, setActualTime] = useState(
+        props.availableTimes.map((times) => <option>{times}</option>)
+    );
+
+    const handleDateChange = (e) => {
+        setDatePick(e.target.value);
+
+        props.setAvailableTimes(e.target.value);
+        setActualTime(props.availableTimes.map((times) => <option>{times}</option>));
+    }
 
     const clearForm = () => {
         setDatePick("");
-        setTimePick("");
         setGuests(1);
         setOccasion("No occasion");
     };
@@ -27,55 +34,51 @@ function BookingForm() {
                 <fieldset>
                     <h2>Book a table</h2>
                     <div className="Field">
-                        <label>
+                        <label htmlFor="date">
                             Choose a date
                         </label>
                         <input
                             value={datePick}
+                            id="date"
+                            required
                             type="date"
-                            onChange={(e) => {
-                                setDatePick(e.target.value);
-                            }}
-                            placeholder="Date"
+                            onChange={handleDateChange}
                         />
                     </div>
                     <div className="Field">
-                        <label>
+                        <label htmlFor="time">
                             Choose the time
                         </label>
                         <select
-                            value={timePick}
-                            onChange={(e) => {
-                                setTimePick(e.target.value);
-                            }}>
-                                {availableTimes.map((availableTime, index) => (
-                                    <option key={index} value={availableTime}>
-                                        {availableTime}
-                                    </option>
-                                ))}
+                            id="time"
+                            required>
+                                {actualTime}
                         </select>
                     </div>
                     <div className="Field">
-                        <label>
+                        <label htmlFor="guests">
                             Number of guests
                         </label>
                         <input
                             value={guests}
                             type="number"
+                            id="guests"
                             onChange={(e) => {
                                 setGuests(e.target.value);
                             }}
-                            placeholder="1"
+                            placeholder="Number of guests"
+                            required
                             min={1}
                             max={10}
                         />
                     </div>
                     <div className="Field">
-                        <label>
+                        <label htmlFor="occasion">
                             Occasion
                         </label>
                         <select
                             value={occasion}
+                            id="occasion"
                             onChange={(e) => {
                                 setOccasion(e.target.value);
                             }}>

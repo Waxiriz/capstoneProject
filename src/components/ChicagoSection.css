@@ -2,8 +2,8 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin-bottom: 10vh;
     padding: 2vh 20%;
+    background-color: #F4CE14;
 }
 
 .chicago h1 {
@@ -14,9 +14,14 @@
     margin-top: 0;
 }
 
+.chicago p {
+    margin-bottom: 15vh;
+}
+
 .chicago img {
     width: min(600px, 50%);
-    object-fit: contain;
+    aspect-ratio: 16/9;
+    max-height: 300px;
 }
 
 .first-pic {
@@ -34,6 +39,10 @@
     .chicago {
         padding: 2vh 5%;
         flex-direction: column-reverse;
+    }
+
+    .chicago img {
+        width: 100%;
     }
 
     .first-pic {
