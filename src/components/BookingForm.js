@@ -6,7 +6,7 @@ function BookingForm(props) {
     const [occasion, setOccasion] = useState("No occasion");
 
     const [actualTime, setActualTime] = useState(
-        props.availableTimes.map((times) => <option>{times}</option>)
+        props.availableTimes?.map((times) => <option key={times}>{times}</option>)
     );
 
     const handleDateChange = (e) => {
@@ -88,7 +88,9 @@ function BookingForm(props) {
                         </select>
                     </div>
                     <button type="submit">
-                        Make your reservation
+                        <a href={"/confirmed"}>
+                            Make your reservation
+                        </a>
                     </button>
                 </fieldset>
             </form>

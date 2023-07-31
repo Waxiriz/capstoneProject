@@ -1,12 +1,15 @@
 import BookingForm from "./BookingForm";
 import { useReducer } from "react";
+import { fetchAPI } from "../bookingAPI";
 
 export function initializeTimes() {
-    return ["17:00", "18:00", "19:00", "20:00", "21:00", "22:00"]
+    // The API doesn't seem to work. According to the discussion on coursera, it looks like the is a know issue.
+    const today = new Date();
+    return fetchAPI(today);
 }
 
 export function updateTimes(date) {
-    return date;
+    return fetchAPI(date)
 }
 
 function BookingPage() {

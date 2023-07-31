@@ -10,6 +10,7 @@ import AboutPage from './components/AboutPage';
 import MenuPage from './components/MenuPage';
 import OrderPage from './components/OrderPage';
 import LoginPage from './components/LoginPage';
+import ConfirmedBooking from './components/ConfirmedBooking';
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
         <Route path="/menu" element={<MenuPage />}></Route>
         <Route path="/online" element={<OrderPage/>}></Route>
         <Route path="/login" element={<LoginPage/>}></Route>
+        <Route path='confirmed' element={<ConfirmedBooking></ConfirmedBooking>}></Route>
       </Routes>
 
       <Footer/>
