@@ -1,0 +1,43 @@
+form, fieldset {
+    border: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+fieldset {
+    width: max(50%, 400px);
+    max-width: 90%;
+    align-items: flex-start;
+    gap: 4vh;
+}
+
+fieldset h2 {
+    width: 100%;
+    text-align: center;
+}
+
+.Field {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    font-size: 1.1rem;
+    gap: 1vh;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+input, select {
+    width: 100%;
+    height: 5vh;
+}
+
+label {
+    font-weight: 500 ;
+}
+
+fieldset button {
+    margin: auto;
+    margin-bottom: 4vh;
+}

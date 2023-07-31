@@ -1,6 +1,7 @@
 import BookingForm from "./BookingForm";
 import { useReducer } from "react";
 import { fetchAPI } from "../bookingAPI";
+import "./BookingPage.css";
 
 export function initializeTimes() {
     // The API doesn't seem to work. According to the discussion on coursera, it looks like the is a know issue.
@@ -18,7 +19,7 @@ function BookingPage() {
 
     return (
         <>
-            This is the Booking page.
+            <h1 className="bookingPage-h1">Book a table</h1>
             <BookingForm 
             availableTimes={availableTimes} 
             setAvailableTimes={dispatch}/>

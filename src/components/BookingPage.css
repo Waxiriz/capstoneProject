@@ -1,0 +1,9 @@
+.bookingPage-h1 {
+    background-color: #415e57;
+    text-align: center;
+    color: aliceblue;
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
